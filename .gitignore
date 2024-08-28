@@ -1,0 +1,15 @@
+# Node modules papkasini kiritmaslik
+node_modules/
+
+# Qurilish fayllarini kiritmaslik
+build/
+
+# Yashirin operatsion tizim fayllarini kiritmaslik
+.DS_Store
+Thumbs.db
+
+# React qutisidagi barcha kiritilmasligi kerak bo'lgan fayllar
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.env
