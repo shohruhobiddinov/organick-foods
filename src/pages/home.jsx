@@ -6,6 +6,12 @@ import newProducts2 from "../assets/2.png";
 import AboutInside from "./aboutInside";
 import ProductsInside from "./productsInside";
 import TestimonialsInside from "./testimonialsInside";
+import OfferInside from "./offerInside";
+import EcoFriendlyInside from "./ecoFriendlyInside";
+import JuiceInside from "./juiceInside";
+import NewsInside from "./newsInsider";
+import SubscribeInside from "./subscribeInside";
+import Footer from "./footer";
 
 function Home(props) {
     return (
@@ -36,6 +42,12 @@ function Home(props) {
             <AboutInside/>
             <ProductsInside/>
             <TestimonialsInside/>
+            <OfferInside/>
+            <EcoFriendlyInside/>
+            <JuiceInside/>
+            <NewsInside/>
+            <SubscribeInside/>
+            <Footer/>
 
         </div>
     );

@@ -39,12 +39,13 @@ function Navbar(props) {
                         </Button>
                     </div>
                 </div>
+
                 <MdMenu className={"cursor-pointer sm:block md:block lg:hidden text-[25px] text-[#274C5B]"}
                         onClick={showDrawer}/>
                 <Drawer onClose={closeDrawer} open={openDrawer}>
                     <div className={"flex flex-col gap-4 font-bold text-[#274C5B] text-[18px]"}>
-                        <Link to={"/"}>Home</Link>
-                        <Link to={"/"}>About</Link>
+                        <Link to={"/"} onClick={closeDrawer}>Home</Link>
+                        <Link to={"/"} onClick={closeDrawer}>About</Link>
                         <p>Pages</p>
                         <p>Shop</p>
                         <p>Projects</p>
