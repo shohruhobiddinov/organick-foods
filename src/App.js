@@ -2,7 +2,7 @@ import React from 'react';
 import Navbar from "./components/navbar";
 import {Route, Routes} from "react-router-dom";
 import Home from "./pages/home";
-import AboutInside from "./pages/aboutInside";
+import About from "./pages/about";
 
 function App(props) {
     return (
@@ -10,6 +10,7 @@ function App(props) {
             <Navbar/>
             <Routes>
                 <Route path="/" element={<Home/>}/>
+                <Route path="/about" element={<About/>}/>
             </Routes>
         </div>
     );

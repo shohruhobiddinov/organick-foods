@@ -21,7 +21,7 @@ function Navbar(props) {
                 <div className={"sm:hidden md:hidden lg:block"}>
                     <div className={"flex items-center gap-7 font-bold text-[#274C5B]"}>
                         <Link to={"/"}>Home</Link>
-                        <Link to={"/"}>About</Link>
+                        <Link to={"/about"}>About</Link>
                         <p>Pages</p>
                         <p>Shop</p>
                         <p>Projects</p>
@@ -45,7 +45,7 @@ function Navbar(props) {
                 <Drawer onClose={closeDrawer} open={openDrawer}>
                     <div className={"flex flex-col gap-4 font-bold text-[#274C5B] text-[18px]"}>
                         <Link to={"/"} onClick={closeDrawer}>Home</Link>
-                        <Link to={"/"} onClick={closeDrawer}>About</Link>
+                        <Link to={"/about"} onClick={closeDrawer}>About</Link>
                         <p>Pages</p>
                         <p>Shop</p>
                         <p>Projects</p>
