@@ -1,9 +1,9 @@
 import React from 'react';
-import customerImage1 from "../assets/Photo.jpg"
-import customerImage2 from "../assets/avatar2.webp"
-import customerImage3 from "../assets/avatar3.webp"
-import customerImage4 from "../assets/avatar4.webp"
-import customerImage5 from "../assets/avatar5.webp"
+import customerImage1 from "../../assets/Photo.jpg"
+import customerImage2 from "../../assets/avatar2.webp"
+import customerImage3 from "../../assets/avatar3.webp"
+import customerImage4 from "../../assets/avatar4.webp"
+import customerImage5 from "../../assets/avatar5.webp"
 import {Carousel} from "antd";
 import {FaStar} from "react-icons/fa";
 import {LeftOutlined, RightOutlined} from "@ant-design/icons";
@@ -64,7 +64,7 @@ function TestimonialsInside(props) {
         <div>
             <div className={"testimonials w-full h-[120vh] flex flex-col justify-center"}>
                 <div className={"text-center"}>
-                    <h3 className={"font-yellowTail text-[35px] text-[#7EB693]"}>Testimonial </h3>
+                    <h3 className={"font-yellowTail text-[35px] text-[#7EB693]z"}>Testimonial </h3>
                     <h2 className={"text-[40px] text-[#274C5B] font-bold"}>What Our Customer Saying?</h2>
                 </div>
                 <Carousel className={"sm:w-[90%] md:w-[75%] lg:w-[60%] mx-auto px-[5%]"}

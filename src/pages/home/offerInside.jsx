@@ -1,10 +1,10 @@
 import React from 'react';
 import {Button} from "antd";
 import {FaCircleArrowRight} from "react-icons/fa6";
-import image1 from "../assets/Photo (8).png"
-import image2 from "../assets/Photo (9).png"
-import image3 from "../assets/Photo (10).png"
-import image4 from "../assets/Photo (11).png"
+import image1 from "../../assets/Photo (8).png"
+import image2 from "../../assets/Photo (9).png"
+import image3 from "../../assets/Photo (10).png"
+import image4 from "../../assets/Photo (11).png"
 import {FaStar} from "react-icons/fa";
 
 function OfferInside(props) {

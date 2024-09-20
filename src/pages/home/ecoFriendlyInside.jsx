@@ -1,5 +1,5 @@
 import React from 'react';
-import image from '../assets/Photo (1).jpg'
+import image from '../../assets/Photo (1).jpg'
 
 function EcoFriendlyInside(props) {
 

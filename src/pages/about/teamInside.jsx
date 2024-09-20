@@ -1,7 +1,7 @@
 import React from 'react';
-import image1 from "../assets/Image (31).png"
-import image2 from "../assets/Image (32).png"
-import image3 from "../assets/Image (33).png"
+import image1 from "../../assets/Image (31).png"
+import image2 from "../../assets/Image (32).png"
+import image3 from "../../assets/Image (33).png"
 import {IoLogoInstagram} from "react-icons/io5";
 import {FaFacebook} from "react-icons/fa6";
 import {FaTwitter} from "react-icons/fa";
@@ -42,7 +42,7 @@ function TeamInside(props) {
                 <div className={"flex flex-wrap gap-5 justify-between"}>
                     {
                         dataOfTeam.map((item, index) => (
-                            <div className={"sm:w-full md:w-[48%] lg:w-[31%] my-3 shadow-lg rounded-2xl"}>
+                            <div className={"sm:w-full md:w-[48%] lg:w-[31%] my-3 shadow-lg rounded-2xl cursor-pointer transition-all hover:-translate-y-1.5"}>
                                 <img src={item.image} alt={item.name} className={"w-full"}/>
                                 <div className={"flex justify-between items-end p-5"}>
                                     <span>

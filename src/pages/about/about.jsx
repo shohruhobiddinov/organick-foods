@@ -1,12 +1,15 @@
 import React from 'react';
-import banner from "../assets/Banner.png"
-import image from "../assets/Image (30).png";
-import icon1 from "../assets/Chemical Plant.png";
-import icon2 from "../assets/Icon.svg";
+import banner from "../../assets/Banner.png"
+import image from "../../assets/Image (30).png";
+import icon1 from "../../assets/Chemical Plant.png";
+import icon2 from "../../assets/Icon.svg";
 import {Button} from "antd";
 import {FaCircleArrowRight} from "react-icons/fa6";
 import WhyChooseUseInside from "./whyChooseUseInside";
 import TeamInside from "./teamInside";
+import AboutUsInside from "./aboutUsInside";
+import SubscribeInside from "../home/subscribeInside";
+import Footer from "../home/footer";
 
 function About(props) {
     return (
@@ -48,6 +51,9 @@ function About(props) {
             {/* Other components */}
             <WhyChooseUseInside/>
             <TeamInside/>
+            <AboutUsInside/>
+            <SubscribeInside/>
+            <Footer/>
         </div>
     );
 }

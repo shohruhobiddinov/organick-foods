@@ -1,7 +1,7 @@
 import React from 'react';
-import image1 from "../assets/Photo (2).jpg"
-import image2 from "../assets/Photo (3).jpg"
-import image3 from "../assets/Image (28).png"
+import image1 from "../../assets/Photo (2).jpg"
+import image2 from "../../assets/Photo (3).jpg"
+import image3 from "../../assets/Image (28).png"
 import {Button} from "antd";
 
 function JuiceInside(props) {

@@ -1,7 +1,7 @@
 import React from 'react';
-import image from "../assets/Photo (1).png"
-import icon1 from "../assets/Icon (2).png"
-import icon2 from "../assets/Icon (3).png"
+import image from "../../assets/Photo (1).png"
+import icon1 from "../../assets/Icon (2).png"
+import icon2 from "../../assets/Icon (3).png"
 import {Button} from "antd";
 import {FaCircleArrowRight} from "react-icons/fa6";
 

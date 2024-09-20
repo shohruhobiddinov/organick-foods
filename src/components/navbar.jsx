@@ -22,8 +22,7 @@ function Navbar(props) {
                     <div className={"flex items-center gap-7 font-bold text-[#274C5B]"}>
                         <Link to={"/"}>Home</Link>
                         <Link to={"/about"}>About</Link>
-                        <p>Pages</p>
-                        <p>Shop</p>
+                        <Link to={"/shop"}>Shop</Link>
                         <p>Projects</p>
                         <p>News</p>
                     </div>
@@ -46,8 +45,7 @@ function Navbar(props) {
                     <div className={"flex flex-col gap-4 font-bold text-[#274C5B] text-[18px]"}>
                         <Link to={"/"} onClick={closeDrawer}>Home</Link>
                         <Link to={"/about"} onClick={closeDrawer}>About</Link>
-                        <p>Pages</p>
-                        <p>Shop</p>
+                        <Link to={"/shop"} onClick={closeDrawer}>Shop</Link>
                         <p>Projects</p>
                         <p>News</p>
                     </div>

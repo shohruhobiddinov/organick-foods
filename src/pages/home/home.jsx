@@ -1,8 +1,8 @@
 import React from 'react';
 import {Button, Image} from "antd";
 import {FaCircleArrowRight} from "react-icons/fa6";
-import newProducts1 from "../assets/1.png";
-import newProducts2 from "../assets/2.png";
+import newProducts1 from "../../assets/1.png";
+import newProducts2 from "../../assets/2.png";
 import AboutInside from "./aboutInside";
 import ProductsInside from "./productsInside";
 import TestimonialsInside from "./testimonialsInside";

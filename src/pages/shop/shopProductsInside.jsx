@@ -1,17 +1,28 @@
 import React from 'react';
-import image1 from "../assets/Photo (7).png"
-import image2 from "../assets/Photo (2).png"
-import image3 from "../assets/Photo (3).png"
-import image4 from "../assets/Photo (4).png"
-import image5 from "../assets/Photo (5).png"
-import image6 from "../assets/Photo (6).png"
-import image7 from "../assets/image 13.png"
-import image8 from "../assets/image 14.png"
+import image1 from "../../assets/Photo (7).png"
+import image2 from "../../assets/Photo (2).png"
+import image3 from "../../assets/Photo (3).png"
+import image4 from "../../assets/Photo (4).png"
+import image5 from "../../assets/Photo (5).png"
+import image6 from "../../assets/Photo (6).png"
+import image7 from "../../assets/image 13.png"
+import image8 from "../../assets/image 14.png"
+import image9 from "../../assets/Photo (14).png"
+import image10 from "../../assets/Photo (15).png"
+import image11 from "../../assets/Photo (16).png"
+import image12 from "../../assets/Photo (17).png"
 import {FaStar} from "react-icons/fa";
 import {Button} from "antd";
 import {FaCircleArrowRight} from "react-icons/fa6";
+import {useNavigate} from "react-router-dom";
 
-function ProductsInside(props) {
+function ShopProductsInside(props) {
+
+    const navigate = useNavigate()
+
+    const handleClick = (item) => {
+        navigate("/shop/shopSingle", {state: {product: item}})
+    }
 
     const dataProducts = [
         {
@@ -77,21 +88,50 @@ function ProductsInside(props) {
             oldPrice: "$20.00",
             newPrice: "$15.00",
             stars: 3
-        }
+        },
+        {
+            image: image9,
+            type: "Health",
+            name: "Mung Bean",
+            oldPrice: "$20.00",
+            newPrice: "$11.00",
+            stars: 5
+        },
+        {
+            image: image10,
+            type: "Nuts",
+            name: "White Hazelnut",
+            oldPrice: "$20.00",
+            newPrice: "$12.00",
+            stars: 5
+        },
+        {
+            image: image11,
+            type: "Fresh",
+            name: "Fresh Corn",
+            oldPrice: "$20.00",
+            newPrice: "$17.00",
+            stars: 5
+        },
+        {
+            image: image12,
+            type: "Fresh",
+            name: "Organic Almonds",
+            oldPrice: "$20.00",
+            newPrice: "$15.00",
+            stars: 5
+        },
+
     ]
 
     return (
         <div>
             <div className={"p-[10%]"}>
-                <div className={"w-full text-center"}>
-                    <h3 className={"font-yellowTail text-[35px] text-[#7EB693]"}>Categories </h3>
-                    <h2 className={"text-[40px] text-[#274C5B] font-bold"}>Our Products</h2>
-                </div>
                 <div className={"w-full flex flex-wrap justify-between"}>
                     {
                         dataProducts.map((item, index) => (
-                            <div key={index}
-                                 className={"relative sm:w-[100%] md:w-[49%] lg:w-[32%] xl:w-[24%] rounded-2xl overflow-hidden my-2 shadow-lg hover:-translate-y-1 transition-all"}>
+                            <div key={index} onClick={() => handleClick(item)}
+                                 className={"cursor-pointer relative sm:w-[100%] md:w-[49%] lg:w-[32%] xl:w-[24%] rounded-2xl overflow-hidden my-2 shadow-lg hover:-translate-y-1 transition-all"}>
                                 <div className={"w-full sm:h-[320px] md:h-[300px] lg:h-[270px]"}>
                                     <img src={item.image} alt="" className="mx-auto mt-[20%]"/>
                                 </div>
@@ -117,17 +157,9 @@ function ProductsInside(props) {
                         ))
                     }
                 </div>
-                <div className={"w-full text-center"}>
-                    <Button className={"font-bold bg-[#274C5B] p-7 text-white mt-5"}
-                            type={"dark"}
-                            icon={<FaCircleArrowRight/>}
-                            iconPosition={"end"}>
-                        Learn More
-                    </Button>
-                </div>
             </div>
         </div>
     )
 }
 
-export default ProductsInside;
+export default ShopProductsInside;

@@ -1,8 +1,10 @@
 import React from 'react';
 import Navbar from "./components/navbar";
 import {Route, Routes} from "react-router-dom";
-import Home from "./pages/home";
-import About from "./pages/about";
+import Home from "./pages/home/home";
+import About from "./pages/about/about";
+import Shop from "./pages/shop/shop";
+import ShopSingle from "./pages/shop/shopSingle";
 
 function App(props) {
     return (
@@ -11,6 +13,8 @@ function App(props) {
             <Routes>
                 <Route path="/" element={<Home/>}/>
                 <Route path="/about" element={<About/>}/>
+                <Route path="/shop" element={<Shop/>}/>
+                <Route path="/shop/shopSingle" element={<ShopSingle/>}/>
             </Routes>
         </div>
     );

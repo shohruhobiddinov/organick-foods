@@ -1,10 +1,10 @@
 import React from 'react';
-import image from "../assets/Photo (4).jpg";
+import image from "../../assets/Photo (4).jpg";
 import {FaCircleStop} from "react-icons/fa6";
-import icon1 from "../assets/Icon (4).png"
-import icon2 from "../assets/Icon (5).png"
-import icon3 from "../assets/Icon (6).png"
-import icon4 from "../assets/Icon (7).png"
+import icon1 from "../../assets/Icon (4).png"
+import icon2 from "../../assets/Icon (5).png"
+import icon3 from "../../assets/Icon (6).png"
+import icon4 from "../../assets/Icon (7).png"
 
 function WhyChooseUseInside(props) {
 
@@ -69,7 +69,7 @@ function WhyChooseUseInside(props) {
                 <div className={"w-full flex flex-wrap justify-between gap-3 my-10"}>
                     {
                         dataOfCards.map((item, index) => (
-                            <div className={"sm:w-full md:w-[48%] lg:w-[23%] bg-white rounded-2xl p-7 text-center my-3"}>
+                            <div className={"sm:w-full md:w-[48%] lg:w-[23%] bg-white rounded-2xl p-7 text-center my-3 cursor-pointer transition-all hover:-translate-y-1.5"}>
                                 <img src={item.image} alt={item.title} className={"mx-auto"}/>
                                 <h3 className={"text-[#274C5B] font-bold my-3 text-[20px]"}>{item.title}</h3>
                                 <p className={"text-[#525C60] text-[16px]"}>{item.description}</p>

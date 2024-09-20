@@ -1,8 +1,8 @@
 import React from 'react';
 import {Button} from "antd";
 import {FaCircleArrowRight} from "react-icons/fa6";
-import image1 from "../assets/Image (29).png"
-import image2 from "../assets/Photo (12).png"
+import image1 from "../../assets/Image (29).png"
+import image2 from "../../assets/Photo (12).png"
 import {FaUser} from "react-icons/fa";
 
 function NewsInside(props) {
