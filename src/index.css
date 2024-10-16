@@ -23,3 +23,8 @@
     background-repeat: no-repeat;
     background-size: cover;
 }
+.organickOnlyInside{
+  background-image: url("./assets/Background Image.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+}

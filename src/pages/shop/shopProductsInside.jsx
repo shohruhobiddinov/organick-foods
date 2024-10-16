@@ -17,7 +17,6 @@ import {FaCircleArrowRight} from "react-icons/fa6";
 import {useNavigate} from "react-router-dom";
 
 function ShopProductsInside(props) {
-
     const navigate = useNavigate()
 
     const handleClick = (item) => {

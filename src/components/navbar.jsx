@@ -1,10 +1,30 @@
 import React, {useState} from 'react';
 import logo from "../assets/Logo (1).svg"
-import {Button, Drawer, Input} from "antd";
+import {Button, Drawer, Dropdown, Input, Space} from "antd";
 import {SearchOutlined} from "@ant-design/icons";
 import {IoCartOutline} from "react-icons/io5";
 import {Link} from "react-router-dom";
 import {MdMenu} from "react-icons/md";
+import {DownOutlined, SmileOutlined} from '@ant-design/icons';
+
+const items = [
+    {
+        key: '1',
+        label: (
+            <Link to={"/team"} className={"font-bold text-[#274C5B]"}>
+                Team
+            </Link>
+        ),
+    },
+    {
+        key: '2',
+        label: (
+            <Link to={"/blog"} className={"font-bold text-[#274C5B]"}>
+                Blog
+            </Link>
+        ),
+    },
+];
 
 function Navbar(props) {
     const [openDrawer, setOpenDrawer] = useState(false);
@@ -23,8 +43,14 @@ function Navbar(props) {
                         <Link to={"/"}>Home</Link>
                         <Link to={"/about"}>About</Link>
                         <Link to={"/shop"}>Shop</Link>
-                        <p>Projects</p>
-                        <p>News</p>
+                        <Link to={"/service"}>Services</Link>
+                        <Link to={"/portfolio"}>Portfolio</Link>
+                        <Dropdown menu={{items}}>
+                            <Space>
+                                Others
+                                <DownOutlined/>
+                            </Space>
+                        </Dropdown>
                     </div>
                 </div>
                 <div className="sm:hidden md:hidden lg:block">
@@ -46,8 +72,9 @@ function Navbar(props) {
                         <Link to={"/"} onClick={closeDrawer}>Home</Link>
                         <Link to={"/about"} onClick={closeDrawer}>About</Link>
                         <Link to={"/shop"} onClick={closeDrawer}>Shop</Link>
-                        <p>Projects</p>
-                        <p>News</p>
+                        <Link to={"/service"}>Services</Link>
+                        <Link to={"/portfolio"}>Portfolio</Link>
+                        <Link to={"/team"}>Team</Link>
                     </div>
                     <div className={"flex flex-col gap-5 my-5"}>
                         <Input className={"p-0 pl-5 rounded-3xl bg-[#FAFAFA] border-none"}
@@ -60,7 +87,7 @@ function Navbar(props) {
                                }
                         />
                         <Button className={"flex rounded-3xl items-center gap-2 py-5 font-bold text-[#274C5B]"}
-                        onClick={closeDrawer}>
+                                onClick={closeDrawer}>
                             <IoCartOutline className={"w-[20px] h-[20px]"}/>
                             Cart (0)
                         </Button>

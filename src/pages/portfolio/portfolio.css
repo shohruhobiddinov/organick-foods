@@ -1,0 +1,18 @@
+.card-hover:hover .absolute-card{
+    display: flex;
+}
+.absolute-card{
+    animation-name: absolute-card;
+    animation-duration: .5s;
+    background-color: rgba(255, 255, 255, 0.73);
+}
+@keyframes absolute-card {
+    from{
+        width: 0;
+        height: 0;
+    }
+    to{
+        width: 90%;
+        height: 75%;
+    }
+}

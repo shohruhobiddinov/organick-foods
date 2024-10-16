@@ -4,6 +4,8 @@ import {useLocation} from "react-router-dom";
 import {FaStar} from "react-icons/fa";
 import {Button} from "antd";
 import {FaCircleArrowRight} from "react-icons/fa6";
+import SubscribeInside from "../home/subscribeInside";
+import Footer from "../home/footer";
 
 function ShopSingle() {
 
@@ -73,6 +75,8 @@ function ShopSingle() {
                     </p>
                 </div>
             </div>
+            <SubscribeInside/>
+            <Footer/>
         </div>
     );
 }
