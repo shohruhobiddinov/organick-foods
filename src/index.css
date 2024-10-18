@@ -23,8 +23,21 @@
     background-repeat: no-repeat;
     background-size: cover;
 }
-.organickOnlyInside{
-  background-image: url("./assets/Background Image.png");
+
+.organickOnlyInside {
+    background-image: url("./assets/Background Image.png");
     background-repeat: no-repeat;
     background-size: cover;
+}
+
+.contactUsBackground{
+    background-image: url("./assets/Image (57)2.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.error404{
+    background-image: url("./assets/Image (57).png");
+    background-size: cover;
+    background-repeat: no-repeat;
 }

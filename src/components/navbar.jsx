@@ -11,17 +11,37 @@ const items = [
     {
         key: '1',
         label: (
-            <Link to={"/team"} className={"font-bold text-[#274C5B]"}>
-                Team
-            </Link>
+            <Link to={"/team"} className={"font-bold text-[#274C5B] text-[16px]"}>Team</Link>
         ),
     },
     {
         key: '2',
         label: (
-            <Link to={"/blog"} className={"font-bold text-[#274C5B]"}>
-                Blog
-            </Link>
+            <Link to={"/blog"} className={"font-bold text-[#274C5B] text-[16px]"}>Blog</Link>
+        ),
+    },
+    {
+        key: '3',
+        label: (
+            <Link to={"/contactUs"} className={"font-bold text-[#274C5B] text-[16px]"}>Contact Us</Link>
+        ),
+    },
+    {
+        key: '4',
+        label: (
+            <Link to={"/licences"} className={"font-bold text-[#274C5B] text-[16px]"}>Licences</Link>
+        ),
+    },
+    {
+        key: '5',
+        label: (
+            <Link to={"/changelog"} className={"font-bold text-[#274C5B] text-[16px]"}>Changelog</Link>
+        ),
+    },
+    {
+        key: '6',
+        label: (
+            <Link to={"/protected"} className={"font-bold text-[#274C5B] text-[16px]"}>Protected</Link>
         ),
     },
 ];
@@ -46,8 +66,8 @@ function Navbar(props) {
                         <Link to={"/service"}>Services</Link>
                         <Link to={"/portfolio"}>Portfolio</Link>
                         <Dropdown menu={{items}}>
-                            <Space>
-                                Others
+                            <Space className={"cursor-pointer"}>
+                                <h3>Others</h3>
                                 <DownOutlined/>
                             </Space>
                         </Dropdown>
@@ -75,6 +95,11 @@ function Navbar(props) {
                         <Link to={"/service"}>Services</Link>
                         <Link to={"/portfolio"}>Portfolio</Link>
                         <Link to={"/team"}>Team</Link>
+                        <Link to={"/blog"}>Blog</Link>
+                        <Link to={"/contactUs"}>Contact Us</Link>
+                        <Link to={"/licences"}>Licences</Link>
+                        <Link to={"/changelog"}>Changelog</Link>
+                        <Link to={"/protected"}>Protected</Link>
                     </div>
                     <div className={"flex flex-col gap-5 my-5"}>
                         <Input className={"p-0 pl-5 rounded-3xl bg-[#FAFAFA] border-none"}

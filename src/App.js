@@ -12,6 +12,11 @@ import PortfolioSingle from "./pages/portfolio/portfolioSingle";
 import Team from "./pages/team/team";
 import Blog from "./pages/blog/blog";
 import BlogSingle from "./pages/blog/blogSingle";
+import ContactUs from "./pages/contactUs/contactUs";
+import Error404 from "./pages/error404/error404";
+import Licences from "./pages/licences/licences";
+import Changelog from "./pages/changelog/changelog";
+import Protected from "./pages/protected/protected";
 
 function App(props) {
     return (
@@ -29,6 +34,11 @@ function App(props) {
                 <Route path="/team" element={<Team/>}/>
                 <Route path="/blog" element={<Blog/>}/>
                 <Route path="/blog/single" element={<BlogSingle/>}/>
+                <Route path="/contactUs" element={<ContactUs/>}/>
+                <Route path={"*"} element={<Error404/>}/>
+                <Route path={"/licences"} element={<Licences/>}/>
+                <Route path={"/changelog"} element={<Changelog/>}/>
+                <Route path={"/protected"} element={<Protected/>}/>
             </Routes>
         </div>
     );
